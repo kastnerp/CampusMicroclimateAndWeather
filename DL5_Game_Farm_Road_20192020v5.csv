@@ -1,5 +1,5 @@
-﻿Plot Title: DL5,,,,,,,,,,,,,
-#,"Date Time, GMT-05:00","Temp, °C (LGR S/N: 20098520, SEN S/N: 10762331, LBL: Tamb)","RH, % (LGR S/N: 21098500, SEN S/N: 10263331)","Wind Speed, mph (LGR S/N: 20198500, SEN S/N: 21706789)","Wind Direction, ø (LGR S/N: 20198500, SEN S/N: 21706789)","Solar Radiation, W/m² (LGR S/N: 20034090, SEN S/N: 23073988)","Precipitation, Inches  (LGR S/N: 20034090, SEN S/N: 23073988)","DewPt, °C (LGR S/N: 20495520, SEN S/N: 10232331, LBL: Tamb)","SkyCover, Fraction (LGR S/N: 20075520, SEN S/N: 10734331, LBL: Tamb)","Gust Speed, mph (LGR S/N: 20054090, SEN S/N: 20896535)",,,
+﻿"Plot Title: DL5"
+"#","Date Time, GMT-05:00","Temp, °C (LGR S/N: 20098520, SEN S/N: 10762331, LBL: Tamb)","RH, % (LGR S/N: 21098500, SEN S/N: 10263331)","Wind Speed, mph (LGR S/N: 20198500, SEN S/N: 21706789)","Wind Direction, ø (LGR S/N: 20198500, SEN S/N: 21706789)","Solar Radiation, W/m² (LGR S/N: 20034090, SEN S/N: 23073988)","Precipitation, Inches  (LGR S/N: 20034090, SEN S/N: 23073988)","DewPt, °C (LGR S/N: 20495520, SEN S/N: 10232331, LBL: Tamb)","SkyCover, Fraction (LGR S/N: 20075520, SEN S/N: 10734331, LBL: Tamb)","Gust Speed, mph (LGR S/N: 20054090, SEN S/N: 20896535)",,,
 1,01/01/19 12:00:00 AM,5.00,96.00,18.20,156.00,0.00,0.06,4.20,1.00,30.50,,,
 2,01/01/19 01:00:00 AM,5.83,95.00,17.60,156.00,1.16,0.00,4.83,1.00,33.90,,,
 3,01/01/19 02:00:00 AM,6.72,95.00,12.10,155.00,1.16,0.00,5.72,1.00,21.60,,,
