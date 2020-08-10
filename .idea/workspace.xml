@@ -20,87 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e84ca46e-b3ef-4b4e-b0a5-1ecf7830d76c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/export_for_validation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plot_wind_rose.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HoboPlot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HoboPlot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/addresses-point.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/addresses-point.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/addresses-point.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/addresses-point.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/addresses-point.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/admin_units_level8-polygon.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/admin_units_level8-polygon.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/admin_units_level8-polygon.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/admin_units_level8-polygon.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/admin_units_level8-polygon.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_points-point.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_points-point.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_points-point.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_points-point.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_points-point.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_polygons-polygon.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_polygons-polygon.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_polygons-polygon.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_polygons-polygon.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/amenity_polygons-polygon.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/bridges-line.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/bridges-line.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/bridges-line.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/bridges-line.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/bridges-line.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/buildings-polygon.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/buildings-polygon.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/buildings-polygon.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/buildings-polygon.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/buildings-polygon.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/landcover-polygon.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/landcover-polygon.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/landcover-polygon.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/landcover-polygon.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/landcover-polygon.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/railways-line.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/railways-line.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/railways-line.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/railways-line.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/railways-line.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/roads-line.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/roads-line.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/roads-line.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/roads-line.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/roads-line.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/stations-point.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/stations-point.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/stations-point.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/stations-point.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/stations-point.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/tunnels-line.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/tunnels-line.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/tunnels-line.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/tunnels-line.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/tunnels-line.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_areas-polygon.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_areas-polygon.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_areas-polygon.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_areas-polygon.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_areas-polygon.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_lines-line.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_lines-line.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_lines-line.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_lines-line.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ithaca/map/water_lines-line.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NRELData/c97603e3c99ae11619bd1c9363e5a74d.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NRELData/c97603e3c99ae11619bd1c9363e5a74d/1163834_42.45_-76.46_2018.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NRELData/eb4b8473c8287b0bca64cb98f2e50ae4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NRELData/eb4b8473c8287b0bca64cb98f2e50ae4/1163834_42.45_-76.46_tgy-2018.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ReadPlot.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ReadPlot.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadPlot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ValidationTest/mrt.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ValidationTest/solar_radiation.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weather.gh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +76,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="180" y="134" width="2198" height="1204" key="#Plugins" timestamp="1596574080151">
