@@ -56,4 +56,4 @@ for i, geo in gdf_stations.centroid.iteritems():
 
 # Save
 plt.savefig('Map.pdf')
-plt.savefig('Map.png',bbox_inches='tight',pad_inches = 0.1, )
+plt.savefig('Map.png', bbox_inches='tight', pad_inches=0.1, )
