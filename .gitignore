@@ -127,8 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
 *.pdf
-*.png
-*.pdf
-*.png
-~$DL5_Game_Farm_Road_2019.xlsx
+references/*
