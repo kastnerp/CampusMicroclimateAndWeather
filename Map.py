@@ -1,5 +1,4 @@
-
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 # conda install -c https://conda.anaconda.org/ioos geopandas
 # conda install -c conda-forge shapely
@@ -9,17 +8,17 @@ import geopandas as gpd
 from shapely.geometry import Point, Polygon
 import descartes
 
-#final_crs = {'init': 'epsg:28992'}
+# final_crs = {'init': 'epsg:28992'}
 
 buildings = gpd.read_file(
-    'Ithaca/map/buildings-polygon.shp')  # .to_crs(final_crs)
-roads = gpd.read_file('Ithaca/map/roads-line.shp')  # .to_crs(final_crs)
+    'ithaca_map_files/map/buildings-polygon.shp')  # .to_crs(final_crs)
+roads = gpd.read_file('ithaca_map_files/map/roads-line.shp')  # .to_crs(final_crs)
 landcover = gpd.read_file(
-    'Ithaca/map/landcover-polygon.shp')  # .to_crs(final_crs)
+    'ithaca_map_files/map/landcover-polygon.shp')  # .to_crs(final_crs)
 # .to_crs(final_crs)
-water = gpd.read_file('Ithaca/map/water_areas-polygon.shp')
+water = gpd.read_file('ithaca_map_files/map/water_areas-polygon.shp')
 waterlines = gpd.read_file(
-    'Ithaca/map/water_lines-line.shp')  # .to_crs(final_crs)
+    'ithaca_map_files/map/water_lines-line.shp')  # .to_crs(final_crs)
 
 fig, ax = plt.subplots(figsize=(10, 10))
 
@@ -53,8 +52,8 @@ xx = 0.0003
 yy = 0.0001
 
 for i, geo in gdf_stations.centroid.iteritems():
-    ax.annotate(s=stations[i], xy=[geo.x+xx, geo.y-yy], color="red")
+    ax.annotate(s=stations[i], xy=[geo.x + xx, geo.y - yy], color="red")
 
-
-# Save PDF
+# Save
 plt.savefig('Map.pdf')
+plt.savefig('Map.png',bbox_inches='tight',pad_inches = 0.1, )
