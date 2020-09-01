@@ -1,6 +1,16 @@
 # CampusMicroclimateAndWeather
 
-Process:
+# Gsheet Logging file
+
+All notes and comments about battery status etc. [is collected here.](https://docs.google.com/spreadsheets/d/1gOeqPoUskun3UhIJ1qPwKxNo8b02dM2avpZNKrtnYA4/edit#gid=0)
+
+
+# In general
+
+- We use ReadPlot.ipynb for all the scripting
+- Some helper functions live externally in the remaining *.py files
+
+# Process:
 
 1. Offload data from stations, in the .dtf format
 2. export from hoboware in .csv, and make sure all the datetime settings are correct
@@ -11,7 +21,7 @@ Process:
 7. Sync Github
 8. re-run the python script, and almost always it complains about something, troubleshoot.
 
-Known Issues:
+# Known Issues:
 
 1. Hoboreader will not plot for the date unless all sources have data for that date. For instance, if 4 of your sources have data 1/1 - 6/1, and 1 has it 1/1 - 7/1, it will only plot until 6/1, right now.
 
