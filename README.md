@@ -43,7 +43,6 @@
 
 1. Hoboreader will not plot for the date unless all sources have data for that date. For instance, if 4 of your sources have data 1/1 - 6/1, and 1 has it 1/1 - 7/1, it will only plot until 6/1, right now.
 
-2. [The Pandas Apply function is nitpicky](https://github.com/kastnerp/CampusMicroclimateAndWeather/issues/1), and sometimes has to be re-run several times until it executes correctly. No error messages will show. 
 
 
 
