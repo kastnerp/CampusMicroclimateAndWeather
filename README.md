@@ -4,10 +4,10 @@
 
 ## Weather stations
 
-- A table with all variables collected per station is [here](https://docs.google.com/spreadsheets/d/1stQ-JpZJQzPA_StJ-Pz5o_tf_n-uWoIriaG0Jw_OWBU/edit#gid=1719518335).
+- A table with all variables collected per station is [here](https://docs.google.com/spreadsheets/d/1stQ-JpZJQzPA_StJ-Pz5o_tf_n-uWoIriaG0Jw_OWBU/edit?usp=sharing).
 
-- All notes and comments about logging and battery status etc. [is collected here.](https://docs.google.com/spreadsheets/d/1gOeqPoUskun3UhIJ1qPwKxNo8b02dM2avpZNKrtnYA4/edit#gid=0)
-- Manual categorization into sunny/cloudy days and their wind directions is done [here](https://docs.google.com/spreadsheets/d/1Ovnedzpi4LMOBK0Ii7IPQtpKql-AmFPRoOFP7UN4RUE/edit#gid=0).
+- All notes and comments about logging and battery status etc. [is collected here.](https://docs.google.com/spreadsheets/d/1gOeqPoUskun3UhIJ1qPwKxNo8b02dM2avpZNKrtnYA4/edit?usp=sharing)
+- Manual categorization into sunny/cloudy days and their wind directions is done [here](https://docs.google.com/spreadsheets/d/1Ovnedzpi4LMOBK0Ii7IPQtpKql-AmFPRoOFP7UN4RUE/edit?usp=sharing).
 
 ## Map
 
@@ -17,7 +17,7 @@
 
 ## Photos of stations
 
-- Photos [are collected here](https://drive.google.com/drive/folders/1AeEGymtCQCTzOrZeUyZ71PHmKb6kHgky?usp=sharing).
+- Photos [are collected here](https://drive.google.com/drive/folders/12eZfdLehY-cCHlcfHygO_kw4nGF1c4Tg?usp=sharing).
 
 ## In general
 
