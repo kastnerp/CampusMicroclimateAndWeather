@@ -8,6 +8,7 @@
 
 - All notes and comments about logging and battery status etc. [is collected here.](https://docs.google.com/spreadsheets/d/1gOeqPoUskun3UhIJ1qPwKxNo8b02dM2avpZNKrtnYA4/edit?usp=sharing)
 - Manual categorization into sunny/cloudy days and their wind directions is done [here](https://docs.google.com/spreadsheets/d/1Ovnedzpi4LMOBK0Ii7IPQtpKql-AmFPRoOFP7UN4RUE/edit?usp=sharing).
+- Readme on the File Structure of the Google Drive Folder for Campus Weather and MicroClimate is done [here](https://docs.google.com/document/d/1QgseVN3zFGXV9Clwww-3O3Q9E_a1uQgMMkEOYMuYIeE/edit?usp=sharing)
 
 ## Map
 
