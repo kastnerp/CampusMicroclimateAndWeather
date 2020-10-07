@@ -4,10 +4,11 @@
 
 ## Weather stations
 
-- A table with all variables collected per station is [here](https://docs.google.com/spreadsheets/d/1stQ-JpZJQzPA_StJ-Pz5o_tf_n-uWoIriaG0Jw_OWBU/edit#gid=1719518335).
+- A table with all variables collected per station is [here](https://docs.google.com/spreadsheets/d/1stQ-JpZJQzPA_StJ-Pz5o_tf_n-uWoIriaG0Jw_OWBU/edit?usp=sharing).
 
-- All notes and comments about logging and battery status etc. [is collected here.](https://docs.google.com/spreadsheets/d/1gOeqPoUskun3UhIJ1qPwKxNo8b02dM2avpZNKrtnYA4/edit#gid=0)
-- Manual categorization into sunny/cloudy days and their wind directions is done [here](https://docs.google.com/spreadsheets/d/1Ovnedzpi4LMOBK0Ii7IPQtpKql-AmFPRoOFP7UN4RUE/edit#gid=0).
+- All notes and comments about logging and battery status etc. [is collected here.](https://docs.google.com/spreadsheets/d/1gOeqPoUskun3UhIJ1qPwKxNo8b02dM2avpZNKrtnYA4/edit?usp=sharing)
+- Manual categorization into sunny/cloudy days and their wind directions is done [here](https://docs.google.com/spreadsheets/d/1Ovnedzpi4LMOBK0Ii7IPQtpKql-AmFPRoOFP7UN4RUE/edit?usp=sharing).
+- Readme on the File Structure of the Google Drive Folder for Campus Weather and MicroClimate is done [here](https://docs.google.com/document/d/1QgseVN3zFGXV9Clwww-3O3Q9E_a1uQgMMkEOYMuYIeE/edit?usp=sharing)
 
 ## Map
 
@@ -17,7 +18,7 @@
 
 ## Photos of stations
 
-- Photos [are collected here](https://drive.google.com/drive/folders/1AeEGymtCQCTzOrZeUyZ71PHmKb6kHgky?usp=sharing).
+- Photos [are collected here](https://drive.google.com/drive/folders/12eZfdLehY-cCHlcfHygO_kw4nGF1c4Tg?usp=sharing).
 
 ## In general
 
@@ -43,7 +44,6 @@
 
 1. Hoboreader will not plot for the date unless all sources have data for that date. For instance, if 4 of your sources have data 1/1 - 6/1, and 1 has it 1/1 - 7/1, it will only plot until 6/1, right now.
 
-2. [The Pandas Apply function is nitpicky](https://github.com/kastnerp/CampusMicroclimateAndWeather/issues/1), and sometimes has to be re-run several times until it executes correctly. No error messages will show. 
 
 
 
