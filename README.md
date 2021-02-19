@@ -12,7 +12,7 @@
 
 ## Map
 
-![Map](Map.png)
+![Map](Map.svg)
 
 
 
