@@ -94,3 +94,30 @@ For the purposes of validating simulations conducted with Eddy, a tool developed
 The stations were all built using Hoboware components, on steel tripods and placed in strategic locations that had pre-disposed microclimate tendencies. Some custom components such as arms and sensor holders were made (see image) One station was placed on the roof deck of Olin Library, which given the nature of the deck (steel construction with a gravel layer) has no evaporation and no vegetation shading; One station in the Physical Science Building’s Parking Lot which also has no evaporation, but has the effect of surrounding buildings on wind/radiation and temperature; One station in the Stone Garden between Tjaden and Sibley Hall which has effects from evaporation, shading from vegetation and the venturi effect. The fourth and last station was placed on Milstein Roof which has a green roof, thus impacts from evaporation, but no shading from vegetation.
 
 The stations were run continuously, and data downloaded every couple of weeks to check the validity of the data, and to see if the assumptions of the effects from their placement was correct. The data from the stations will continue be used in analysis to validate the Eddy model and improve its simulations!
+
+
+
+# Missing Values
+
+# Missing Values
+
+DL1_Stone_Garden_Tjaden_Hall_2020_MissingVals
+![DL1_Stone_Garden_Tjaden_Hall_2020_MissingVals](DL1_Stone_Garden_Tjaden_Hall_2020_MissingVals.png)
+DL5_Game_Farm_Road_2019_MissingVals
+![DL5_Game_Farm_Road_2019_MissingVals](DL5_Game_Farm_Road_2019_MissingVals.png)
+DL4_Milstein_Hall_Roof_2019_MissingVals
+![DL4_Milstein_Hall_Roof_2019_MissingVals](DL4_Milstein_Hall_Roof_2019_MissingVals.png)
+DL3_Olin_Library_2019_MissingVals
+![DL3_Olin_Library_2019_MissingVals](DL3_Olin_Library_2019_MissingVals.png)
+DL2_PSB_Parking_Lot_2019_MissingVals
+![DL2_PSB_Parking_Lot_2019_MissingVals](DL2_PSB_Parking_Lot_2019_MissingVals.png)
+DL1_Stone_Garden_Tjaden_Hall_2019_MissingVals
+![DL1_Stone_Garden_Tjaden_Hall_2019_MissingVals](DL1_Stone_Garden_Tjaden_Hall_2019_MissingVals.png)
+DL5_Game_Farm_Road_2020_MissingVals
+![DL5_Game_Farm_Road_2020_MissingVals](DL5_Game_Farm_Road_2020_MissingVals.png)
+DL4_Milstein_Hall_Roof_2020_MissingVals
+![DL4_Milstein_Hall_Roof_2020_MissingVals](DL4_Milstein_Hall_Roof_2020_MissingVals.png)
+DL3_Olin_Library_2020_MissingVals
+![DL3_Olin_Library_2020_MissingVals](DL3_Olin_Library_2020_MissingVals.png)
+DL2_PSB_Parking_Lot_2020_MissingVals
+![DL2_PSB_Parking_Lot_2020_MissingVals](DL2_PSB_Parking_Lot_2020_MissingVals.png)
