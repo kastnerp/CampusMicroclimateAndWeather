@@ -13,7 +13,10 @@ import regex as re
 from epw import epw
 import calendar
 import pathlib
-import tqdm
+from tqdm import tqdm
+import pandas as pd
+from hoboreader import HoboReader
+
 
 def windows_filename(s):
     s = str(s).strip().replace(' ', '_')
@@ -127,33 +130,121 @@ def load_epw_df(filepath):
 # wind_df = epw_file["Wind Direction"]
 
 
-def all_hours_constant(s, max_y_interval):
-    res = s.between(-max_y_interval, max_y_interval)
-
-    all_between = res.all()
-
-    return all_between
+# h = find_hours_w_constant_wind_dirs(10, 8, wind_df)
+# h will give you all hours of the year for which the following 8 hours are within +-10° of wind direction in either direction
 
 
 
-def find_hours_w_constant_wind_dirs(max_y_interval, requested_x_interval, wind_dir_series):
-
+def find_hours_w_constant_wind_dirs(wind_dir_interval, n_hours_constant,
+                                    U_above, wind_dirs, wind_vels):
     # requested_x_interval - hours wind is constant
     # max_y_interval - max difference allowed while considered to be constant
 
-    # write this as forward counting method
+    def all_hours_constant(s, max_y_interval):
+
+        res = np.all(np.logical_and(s >= -max_y_interval, s <= max_y_interval))
+        # print(res)
+        return res.all()
+
+    # all_hours_constant(np.array([4,4,3.5,4,5]), 15)
+
+    def is_U_above(s, U_above):
+        res = np.all(s > U_above)
+        # print(res)
+        return res
+
+    # is_U_above(3,np.array([4,4,3.5,4,5]))
+
+    def is_fill_data(s):
+        res = np.all(s == 999)
+        # print(res)
+        return res
 
     hours_constant = []
+    wind_dir_diff = np.diff(wind_dirs)
+    total = len(wind_dir_diff)
 
-    wind_dir_series_diff = wind_dir_series.diff()
+    i = 0
+    while  i < total:
 
-    for hour, diff in tqdm(enumerate(wind_dir_series_diff), total=wind_dir_series.shape[0]):
-        period = wind_dir_series_diff[hour:hour + requested_x_interval]
-        if (all_hours_constant(period, max_y_interval) and not (
-                wind_dir_series[hour:hour + requested_x_interval] == 999).all()):
-            hours_constant.append(hour)
+        period_dirs = wind_dir_diff[i:i + n_hours_constant]
+        period_vels = wind_vels[i:i + n_hours_constant]
+
+        is_const = all_hours_constant(period_dirs, wind_dir_interval)
+        is_above_Y = is_U_above(period_vels, U_above)
+        is_filled = is_fill_data(period_dirs)
+
+        if is_const and is_above_Y and not is_filled:
+            hours_constant.append(i)
+            i += n_hours_constant
+        else:
+            i  += 1
+        #print(i)
 
     return hours_constant
 
+
 # h = find_hours_w_constant_wind_dirs(10, 8, wind_df)
 # h will give you all hours of the year for which the following 8 hours are within +-10° of wind direction in either direction
+def get_1y_data(df, year):
+    return df[str(year) + '-01-01':str(year) + '-12-31']
+
+
+# get_1y_data(df5,2019)
+
+S5 = HoboReader(r"C:\Users\pkastner\Documents\GitHub\HoboPlot\DL5_Game_Farm_Road.csv")
+df5 = S5.get_dataframe()
+df5 = df5.shift(periods=(-2), fill_value=0)
+df5_1y = df5
+#df5_1y = get_1y_data(df5, 2019)
+wind_dirs = df5_1y.loc[:, ['Wind Direction']].values.flatten()
+wind_vels = df5_1y.loc[:, ['Wind Speed']].values.flatten()
+
+
+
+h = find_hours_w_constant_wind_dirs(10, 3, 4, wind_dirs, wind_vels)
+h
+# pd.set_option('display.max_rows', None)
+
+print(len(h))
+print(h)
+print(wind_dirs[h])
+print(wind_vels[h])
+
+res= df5_1y.iloc[h,[4,5]]
+
+
+sss = pd.DataFrame(set([272
+,281
+,136
+,141
+,141
+,141
+,138
+,154
+,149
+,313
+,325
+,325
+,327
+,318
+,311
+,299
+,313
+,152
+,147
+,153
+,162
+,150
+,154
+,156
+,153
+,152
+,154
+,150
+,148
+,148
+,148
+,145
+,157
+,169]))
