@@ -190,61 +190,19 @@ def get_1y_data(df, year):
     return df[str(year) + '-01-01':str(year) + '-12-31']
 
 
-# get_1y_data(df5,2019)
 
 S5 = HoboReader(r"C:\Users\pkastner\Documents\GitHub\HoboPlot\DL5_Game_Farm_Road.csv")
 df5 = S5.get_dataframe()
 df5 = df5.shift(periods=(-2), fill_value=0)
 df5_1y = df5
-#df5_1y = get_1y_data(df5, 2019)
 wind_dirs = df5_1y.loc[:, ['Wind Direction']].values.flatten()
 wind_vels = df5_1y.loc[:, ['Wind Speed']].values.flatten()
 
+# wind_dir_interval, n_hours_constant, U_above, wind_dirs, wind_vels
+h = find_hours_w_constant_wind_dirs(15, 4, 3.5, wind_dirs, wind_vels)
+
+df  = S5.get_dataframe()
+df_ds = df[['Wind Speed', 'Wind Direction', 'Date Time']].iloc[h]
+df_ds
 
 
-h = find_hours_w_constant_wind_dirs(10, 3, 4, wind_dirs, wind_vels)
-h
-# pd.set_option('display.max_rows', None)
-
-print(len(h))
-print(h)
-print(wind_dirs[h])
-print(wind_vels[h])
-
-res= df5_1y.iloc[h,[4,5]]
-
-
-sss = pd.DataFrame(set([272
-,281
-,136
-,141
-,141
-,141
-,138
-,154
-,149
-,313
-,325
-,325
-,327
-,318
-,311
-,299
-,313
-,152
-,147
-,153
-,162
-,150
-,154
-,156
-,153
-,152
-,154
-,150
-,148
-,148
-,148
-,145
-,157
-,169]))
