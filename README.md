@@ -1,5 +1,10 @@
 # CampusMicroclimateAndWeather
 
+## How to use this
+
+- Navigate to this folder with anaconda shell
+- Create conda environment by running `conda env create --file environment.yml` in your anaconda shell
+
 
 
 ## Weather stations
