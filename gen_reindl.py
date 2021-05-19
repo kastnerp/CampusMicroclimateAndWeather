@@ -1,5 +1,5 @@
 import math
-
+import numpy as np
 
 class GenReindl:
     """
@@ -67,6 +67,10 @@ class GenReindl:
             return day + 334
         else:
             print("bad month")
+
+
+
+
 
     def solar_elev_azi_ecc(self, latitude,
                            longitude,
@@ -208,3 +212,17 @@ class GenReindl:
         self.irrad_dif = irrad_dif
 
         return irrad_beam_nor, irrad_dif
+
+
+    calc_split_vectorized = np.vectorize(calc_split)
+
+
+#gr = GenReindl(76, 42, -60)
+#
+#month = np.array([1,2,5,6])
+#day = np.array([1,2,5,6])
+#hour = np.array([1,2,5,6])
+#ghr = np.array([100,200,200,200])
+#
+#gr.calc_split_vectorized(gr, month, day, hour, ghr)
+

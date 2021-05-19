@@ -191,18 +191,18 @@ def get_1y_data(df, year):
 
 
 
-S5 = HoboReader(r"C:\Users\pkastner\Documents\GitHub\HoboPlot\DL5_Game_Farm_Road.csv")
-df5 = S5.get_dataframe()
-df5 = df5.shift(periods=(-2), fill_value=0)
-df5_1y = df5
-wind_dirs = df5_1y.loc[:, ['Wind Direction']].values.flatten()
-wind_vels = df5_1y.loc[:, ['Wind Speed']].values.flatten()
-
-# wind_dir_interval, n_hours_constant, U_above, wind_dirs, wind_vels
-h = find_hours_w_constant_wind_dirs(15, 4, 3.5, wind_dirs, wind_vels)
-
-df  = S5.get_dataframe()
-df_ds = df[['Wind Speed', 'Wind Direction', 'Date Time']].iloc[h]
-df_ds
+#S5 = HoboReader(r"C:\Users\pkastner\Documents\GitHub\HoboPlot\DL5_Game_Farm_Road.csv")
+#df5 = S5.get_dataframe()
+#df5 = df5.shift(periods=(-2), fill_value=0)
+#df5_1y = df5
+#wind_dirs = df5_1y.loc[:, ['Wind Direction']].values.flatten()
+#wind_vels = df5_1y.loc[:, ['Wind Speed']].values.flatten()
+#
+## wind_dir_interval, n_hours_constant, U_above, wind_dirs, wind_vels
+#h = find_hours_w_constant_wind_dirs(15, 4, 3.5, wind_dirs, wind_vels)
+#
+#df  = S5.get_dataframe()
+#df_ds = df[['Wind Speed', 'Wind Direction', 'Date Time']].iloc[h]
+#df_ds
 
 
