@@ -16,6 +16,7 @@ import pathlib
 from tqdm import tqdm
 import pandas as pd
 from hoboreader import HoboReader
+from enum import Enum
 
 
 def windows_filename(s):
@@ -47,6 +48,21 @@ def to_hour_of_year(hour, day, month, year):
     m = sum(days_in_month[:int(month) - 1]) * 24
     d = (int(day) - 1) * 24
     h = int(hour)
+
+    return m + d + h
+
+def to_hour_of_year_dt(dt):
+    # count from 1
+
+    if calendar.isleap(dt.year):
+        days_in_month = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+        print("Leap Year!")
+    else:
+        days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+    m = sum(days_in_month[:int(dt.month) - 1]) * 24
+    d = (int(dt.day) - 1) * 24
+    h = int(dt.hour)
 
     return m + d + h
 
@@ -189,6 +205,93 @@ def find_hours_w_constant_wind_dirs(wind_dir_interval, n_hours_constant,
 def get_1y_data(df, year):
     return df[str(year) + '-01-01':str(year) + '-12-31']
 
+
+
+def get_meas_U(epw_name):
+    ep = epw()
+    ep.read(epw_path / epw_name)
+    epw_df = ep.dataframe
+
+    wind_speed = epw_df['Wind Speed']
+    wind_dir = epw_df['Wind Direction']
+
+    return wind_speed, wind_dir
+
+
+def scale_abl(URefEPW, zref, z0, probing_height):
+    zGround = 0
+    Kappa = 0.41
+    U_star = Kappa * URefEPW / (math.log((zref + z0) / z0))
+    return U_star / Kappa * math.log((probing_height - zGround + z0) / z0)
+
+
+
+
+
+
+class SeasonE(Enum):
+    Winter = 1
+    Spring = 2
+    Summer = 3
+    Fall = 4
+
+
+class Season:
+    def __init__(self, season_enum):
+        self.DayBegin = 1
+        if season_enum == SeasonE.Spring:
+
+            self.DayEnd = 31
+            self.MonthBegin = 3
+            self.MonthEnd = 5
+            self.YearBegin = 2021
+            self.YearEnd = 2021
+
+        elif season_enum == SeasonE.Summer:
+
+            self.DayEnd = 31
+            self.MonthBegin = 6
+            self.MonthEnd = 8
+            self.YearBegin = 2021
+            self.YearEnd = 2021
+
+
+        elif season_enum == SeasonE.Fall:
+            self.DayEnd = 30
+            self.MonthBegin = 9
+            self.MonthEnd = 11
+            self.YearBegin = 2021
+            self.YearEnd = 2021
+
+        else:  # Winter
+            self.DayEnd = 28
+            self.MonthBegin = 12
+            self.MonthEnd = 2
+            self.YearBegin = 2021
+            self.YearEnd = 2022
+
+
+def get_season_hour_bm(season_enum):
+
+    s = Season(season_enum)
+
+    season_hours = pd.date_range(str(s.YearBegin)+'-' + str(s.MonthBegin) + '-' + str(s.DayBegin) + 'T00:00:00.000Z',
+                                 str(s.YearEnd)+'-' + str(s.MonthEnd) + '-' + str(s.DayEnd) + 'T23:00:00.000Z', freq='H')
+
+
+    hours = [to_hour_of_year_dt(i) for i in season_hours]
+
+
+    annual_hours = np.arange(0,8760,1)
+
+    hours_bm = np.array([True if i  in hours else False for i in annual_hours ])
+
+    return hours_bm
+
+
+
+
+#len(get_season_hour_bm(SeasonE.Spring))
 
 
 #S5 = HoboReader(r"C:\Users\pkastner\Documents\GitHub\HoboPlot\DL5_Game_Farm_Road.csv")
