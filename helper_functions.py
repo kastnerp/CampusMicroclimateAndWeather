@@ -1,6 +1,6 @@
 import numpy as np
 import math
-import pandas as pd
+
 from pandas import read_csv
 import csv
 import unittest
@@ -17,7 +17,8 @@ from tqdm import tqdm
 import pandas as pd
 from hoboreader import HoboReader
 from enum import Enum
-
+import pathlib as pl
+epw_path = pl.WindowsPath(r"C:\Users\pkastner\Documents\GitHub\HoboPlot")
 
 def windows_filename(s):
     s = str(s).strip().replace(' ', '_')
