@@ -71,18 +71,6 @@ def to_hour_of_year_dt(dt):
 
 
 
-#import pandas as pd
-#from datetime import datetime
-#import calendar
-#dty = pd.date_range(datetime(2018, 1, 1, 0, 0), datetime(2018, 12, 31, 23, 0), freq="H")
-#dty_l = []
-#filter = list(range(6, 21))
-#for i in dty:
-#    res = to_hour_of_year_dt(i)
-#    if i.hour in filter:
-#        dty_l.append(res+1)
-#df = pd.DataFrame(dty_l)
-#df.to_csv("hours_daytime.csv", index=False, header=False)
 
 
 
